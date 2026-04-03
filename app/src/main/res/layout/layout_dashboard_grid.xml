@@ -8,10 +8,12 @@
 
     <!-- Card 1: Emergency Dispatch (spans 2 columns) -->
     <LinearLayout
+        android:id="@+id/card_emergency_dispatch"
         android:layout_width="0dp"
-        android:layout_height="72dp"
+        android:layout_height="80dp"
         android:layout_columnSpan="2"
         android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="@dimen/margin_item"
         android:background="@drawable/bg_card_red"
         android:padding="@dimen/margin_card"
         android:orientation="horizontal"
@@ -21,11 +23,13 @@
             android:layout_width="@dimen/size_icon_medium"
             android:layout_height="@dimen/size_icon_medium"
             android:src="@drawable/ic_dispatch"
-            android:contentDescription="@string/card_emergency_dispatch" />
+            android:contentDescription="@string/card_emergency_dispatch"
+            android:tint="@color/white" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_marginStart="@dimen/margin_card"
             android:text="@string/card_emergency_dispatch"
             android:textSize="@dimen/text_size_h3"
@@ -35,18 +39,25 @@
 
     <!-- Card 2: Fleet -->
     <LinearLayout
+        android:id="@+id/card_fleet"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:layout_columnWeight="1"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_marginEnd="@dimen/margin_item"
+        android:layout_marginBottom="@dimen/margin_item"
         android:background="@drawable/bg_card"
         android:padding="@dimen/margin_card"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
 
         <ImageView
             android:layout_width="@dimen/size_icon_medium"
             android:layout_height="@dimen/size_icon_medium"
             android:src="@drawable/ic_vehicle"
-            android:contentDescription="@string/card_fleet" />
+            android:contentDescription="@string/card_fleet"
+            android:tint="@color/colorPrimary" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -55,30 +66,40 @@
             android:text="@string/card_fleet"
             android:textSize="@dimen/text_size_body1"
             android:textColor="@color/colorTextPrimary"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:gravity="center" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:text="@string/card_subtitle_fleet"
             android:textSize="@dimen/text_size_caption"
-            android:textColor="@color/colorTextSecondary" />
+            android:textColor="@color/colorTextSecondary"
+            android:gravity="center" />
     </LinearLayout>
 
     <!-- Card 3: Drivers -->
     <LinearLayout
+        android:id="@+id/card_drivers"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:layout_columnWeight="1"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_marginStart="@dimen/margin_item"
+        android:layout_marginBottom="@dimen/margin_item"
         android:background="@drawable/bg_card"
         android:padding="@dimen/margin_card"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
 
         <ImageView
             android:layout_width="@dimen/size_icon_medium"
             android:layout_height="@dimen/size_icon_medium"
             android:src="@drawable/ic_driver"
-            android:contentDescription="@string/card_drivers" />
+            android:contentDescription="@string/card_drivers"
+            android:tint="@color/colorPrimary" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -87,30 +108,40 @@
             android:text="@string/card_drivers"
             android:textSize="@dimen/text_size_body1"
             android:textColor="@color/colorTextPrimary"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:gravity="center" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:text="@string/card_subtitle_drivers"
             android:textSize="@dimen/text_size_caption"
-            android:textColor="@color/colorTextSecondary" />
+            android:textColor="@color/colorTextSecondary"
+            android:gravity="center" />
     </LinearLayout>
 
     <!-- Card 4: Salary -->
     <LinearLayout
+        android:id="@+id/card_salary"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:layout_columnWeight="1"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_marginEnd="@dimen/margin_item"
+        android:layout_marginBottom="@dimen/margin_item"
         android:background="@drawable/bg_card"
         android:padding="@dimen/margin_card"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
 
         <ImageView
             android:layout_width="@dimen/size_icon_medium"
             android:layout_height="@dimen/size_icon_medium"
             android:src="@drawable/ic_salary"
-            android:contentDescription="@string/card_salary" />
+            android:contentDescription="@string/card_salary"
+            android:tint="@color/colorPrimary" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -119,30 +150,40 @@
             android:text="@string/card_salary"
             android:textSize="@dimen/text_size_body1"
             android:textColor="@color/colorTextPrimary"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:gravity="center" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:text="@string/card_subtitle_salary"
             android:textSize="@dimen/text_size_caption"
-            android:textColor="@color/colorTextSecondary" />
+            android:textColor="@color/colorTextSecondary"
+            android:gravity="center" />
     </LinearLayout>
 
     <!-- Card 5: Reports -->
     <LinearLayout
+        android:id="@+id/card_reports"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:layout_columnWeight="1"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_marginStart="@dimen/margin_item"
+        android:layout_marginBottom="@dimen/margin_item"
         android:background="@drawable/bg_card"
         android:padding="@dimen/margin_card"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
 
         <ImageView
             android:layout_width="@dimen/size_icon_medium"
             android:layout_height="@dimen/size_icon_medium"
             android:src="@drawable/ic_reports"
-            android:contentDescription="@string/card_reports" />
+            android:contentDescription="@string/card_reports"
+            android:tint="@color/colorPrimary" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -151,23 +192,30 @@
             android:text="@string/card_reports"
             android:textSize="@dimen/text_size_body1"
             android:textColor="@color/colorTextPrimary"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:gravity="center" />
     </LinearLayout>
 
     <!-- Card 6: Settings -->
     <LinearLayout
+        android:id="@+id/card_settings"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:layout_columnWeight="1"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_marginEnd="@dimen/margin_item"
         android:background="@drawable/bg_card"
         android:padding="@dimen/margin_card"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
 
         <ImageView
             android:layout_width="@dimen/size_icon_medium"
             android:layout_height="@dimen/size_icon_medium"
             android:src="@drawable/ic_settings"
-            android:contentDescription="@string/card_settings" />
+            android:contentDescription="@string/card_settings"
+            android:tint="@color/colorPrimary" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -176,7 +224,8 @@
             android:text="@string/card_settings"
             android:textSize="@dimen/text_size_body1"
             android:textColor="@color/colorTextPrimary"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:gravity="center" />
     </LinearLayout>
 
 </GridLayout>

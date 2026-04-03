@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header with Avatar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/margin_screen">
+
+            <!-- Avatar circle — large -->
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@drawable/bg_avatar_circle"
+                android:src="@drawable/ic_avatar"
+                android:contentDescription="@string/label_drivers" />
+
+            <!-- Driver Name -->
+            <TextView
+                android:id="@+id/tv_driver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_card"
+                android:text="Ali Hassan"
+                android:textSize="@dimen/text_size_h1"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <!-- Phone -->
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="+92 300 1234567"
+                android:textSize="@dimen/text_size_body1"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!-- Details Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/margin_screen"
+            android:layout_marginStart="@dimen/margin_screen"
+            android:layout_marginEnd="@dimen/margin_screen"
+            android:layout_marginTop="-16dp"
+            android:elevation="@dimen/elevation_card">
+
+            <!-- License Number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_license_number"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="@color/colorTextHint"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_license_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="LHV-123456"
+                android:textSize="@dimen/text_size_body1"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="@dimen/margin_card"
+                android:layout_marginBottom="@dimen/margin_card" />
+
+            <!-- License Expiry -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_license_expiry"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="@color/colorTextHint"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_license_expiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Dec 2026"
+                android:textSize="@dimen/text_size_body1"
+                android:textColor="@color/colorTextPrimary" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="@dimen/margin_card"
+                android:layout_marginBottom="@dimen/margin_card" />
+
+            <!-- Assigned Vehicle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_assigned_vehicle"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="@color/colorTextHint"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_vehicle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="LEA-1234"
+                android:textSize="@dimen/text_size_body1"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="@dimen/margin_card"
+                android:layout_marginBottom="@dimen/margin_card" />
+
+            <!-- Assigned Route -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_assigned_route"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="@color/colorTextHint"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_route"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Lahore Industrial Estate → Shahdara"
+                android:textSize="@dimen/text_size_body2"
+                android:textColor="@color/colorTextSecondary" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="@dimen/margin_card"
+                android:layout_marginBottom="@dimen/margin_card" />
+
+            <!-- Availability Status -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_availability"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="@color/colorTextHint"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_availability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="AVAILABLE"
+                android:textSize="@dimen/text_size_body1"
+                android:textColor="@color/colorStatusActive"
+                android:textStyle="bold" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="@dimen/margin_card"
+                android:layout_marginBottom="@dimen/margin_card" />
+
+            <!-- Attendance -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_attendance"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="@color/colorTextHint"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_attendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="24 / 26 days"
+                android:textSize="@dimen/text_size_body1"
+                android:textColor="@color/colorTextPrimary" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="@dimen/margin_card"
+                android:layout_marginBottom="@dimen/margin_card" />
+
+            <!-- Pending Dues -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_pending_dues"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="@color/colorTextHint"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_pending_dues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="PKR 0"
+                android:textSize="@dimen/text_size_body1"
+                android:textColor="@color/colorStatusActive"
+                android:textStyle="bold" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="@dimen/margin_card"
+                android:layout_marginBottom="@dimen/margin_card" />
+
+            <!-- Performance Rating -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_performance_rating"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="@color/colorTextHint"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_performance_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="A"
+                android:textSize="@dimen/text_size_h2"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+

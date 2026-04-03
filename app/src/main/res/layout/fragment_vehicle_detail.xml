@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_screen">
+
+        <!-- Registration Number -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_reg_number"
+            android:textSize="@dimen/text_size_caption"
+            android:textColor="@color/colorTextHint"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_reg_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="LEA-1234"
+            android:textSize="@dimen/text_size_h2"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <!-- Make & Model -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_card"
+            android:text="@string/detail_make_model"
+            android:textSize="@dimen/text_size_caption"
+            android:textColor="@color/colorTextHint"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_make_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Toyota Coaster 2019"
+            android:textSize="@dimen/text_size_body1"
+            android:textColor="@color/colorTextPrimary" />
+
+        <!-- Status -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_card"
+            android:text="@string/detail_status"
+            android:textSize="@dimen/text_size_caption"
+            android:textColor="@color/colorTextHint"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="ACTIVE"
+            android:textSize="@dimen/text_size_body1"
+            android:textColor="@color/colorStatusActive" />
+
+        <!-- Assigned Driver -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_card"
+            android:text="@string/detail_assigned_driver"
+            android:textSize="@dimen/text_size_caption"
+            android:textColor="@color/colorTextHint"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Ali Hassan"
+            android:textSize="@dimen/text_size_body1"
+            android:textColor="@color/colorTextPrimary" />
+
+        <!-- Route -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_card"
+            android:text="@string/detail_assigned_route"
+            android:textSize="@dimen/text_size_caption"
+            android:textColor="@color/colorTextHint"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_route"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Lahore Industrial Estate → Shahdara"
+            android:textSize="@dimen/text_size_body1"
+            android:textColor="@color/colorTextPrimary" />
+
+        <!-- Last Maintenance -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_card"
+            android:text="@string/detail_last_maintenance"
+            android:textSize="@dimen/text_size_caption"
+            android:textColor="@color/colorTextHint"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_last_maintenance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="15 Mar 2025"
+            android:textSize="@dimen/text_size_body1"
+            android:textColor="@color/colorTextPrimary" />
+
+        <!-- Maintenance Cost -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_card"
+            android:text="@string/detail_maintenance_cost"
+            android:textSize="@dimen/text_size_caption"
+            android:textColor="@color/colorTextHint"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_maintenance_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="PKR 2,500"
+            android:textSize="@dimen/text_size_body1"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <!-- Maintenance Table Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_screen"
+            android:text="@string/maintenance_history"
+            android:textSize="@dimen/text_size_h3"
+            android:textColor="@color/colorTextPrimary"
+            android:textStyle="bold" />
+
+        <include
+            layout="@layout/layout_maintenance_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_card" />
+
+        <!-- Common Parts Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_screen"
+            android:text="@string/common_parts"
+            android:textSize="@dimen/text_size_h3"
+            android:textColor="@color/colorTextPrimary"
+            android:textStyle="bold" />
+
+        <include
+            layout="@layout/layout_parts_tag_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_card" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+

@@ -1,9 +1,10 @@
-package com.example.drivo
+package com.example.drivo.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.example.drivo.R
 import com.example.drivo.fragments.DashboardFragment
 import com.example.drivo.fragments.VehicleListFragment
 import com.example.drivo.fragments.DriverListFragment

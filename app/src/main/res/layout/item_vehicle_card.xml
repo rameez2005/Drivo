@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="@dimen/margin_card"
+    android:layout_margin="@dimen/margin_item">
+
+    <!-- Registration Number -->
+    <TextView
+        android:id="@+id/tv_reg_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LEA-1234"
+        android:textSize="@dimen/text_size_h3"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <!-- Make, Model, Year -->
+    <TextView
+        android:id="@+id/tv_make_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_item"
+        android:text="Toyota Coaster (2019)"
+        android:textSize="@dimen/text_size_body1"
+        android:textColor="@color/colorTextSecondary" />
+
+    <!-- Status (with dot) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/margin_item">
+
+        <View
+            android:id="@+id/view_status_dot"
+            android:layout_width="@dimen/size_status_dot"
+            android:layout_height="@dimen/size_status_dot"
+            android:background="@drawable/bg_status_dot_green" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_item"
+            android:text="ACTIVE"
+            android:textSize="@dimen/text_size_body2"
+            android:textColor="@color/colorTextPrimary" />
+    </LinearLayout>
+
+    <!-- Assigned Driver -->
+    <TextView
+        android:id="@+id/tv_driver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_item"
+        android:text="Ali Hassan"
+        android:textSize="@dimen/text_size_body2"
+        android:textColor="@color/colorTextSecondary"
+        android:drawableStart="@drawable/ic_driver"
+        android:drawablePadding="@dimen/margin_item" />
+
+    <!-- Route -->
+    <TextView
+        android:id="@+id/tv_route"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_item"
+        android:text="Lahore Industrial Estate → Shahdara"
+        android:textSize="@dimen/text_size_caption"
+        android:textColor="@color/colorTextHint"
+        android:drawableStart="@drawable/ic_vehicle"
+        android:drawablePadding="@dimen/margin_item" />
+
+</LinearLayout>
+

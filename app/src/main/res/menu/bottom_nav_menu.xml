@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_dashboard"
+        android:title="@string/title_dashboard"
+        android:icon="@drawable/ic_reports" />
+    <item
+        android:id="@+id/nav_vehicles"
+        android:title="@string/title_fleet"
+        android:icon="@drawable/ic_vehicle" />
+    <item
+        android:id="@+id/nav_drivers"
+        android:title="@string/title_drivers"
+        android:icon="@drawable/ic_driver" />
+</menu>
+
