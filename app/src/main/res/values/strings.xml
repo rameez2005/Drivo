@@ -1,0 +1,150 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Drivo</string>
+
+    <!-- Screen titles -->
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_fleet">Fleet</string>
+    <string name="title_drivers">Drivers</string>
+    <string name="title_vehicle_detail">Vehicle Detail</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Stats labels -->
+    <string name="label_vehicles">Vehicles</string>
+    <string name="label_drivers">Drivers</string>
+    <string name="label_advances">Advances</string>
+
+    <!-- Table headers -->
+    <string name="header_part_name">Part Name</string>
+    <string name="header_action">Action</string>
+    <string name="header_date">Date</string>
+    <string name="header_cost">Cost (PKR)</string>
+
+    <!-- Filter labels -->
+    <string name="filter_all">All</string>
+    <string name="filter_active">Active</string>
+    <string name="filter_maintenance">Maintenance</string>
+    <string name="filter_retired">Retired</string>
+
+    <!-- Settings labels -->
+    <string name="label_notifications">Notifications</string>
+    <string name="label_language">Language</string>
+    <string name="label_dark_mode">Dark Mode</string>
+    <string name="label_backup">Backup</string>
+
+    <!-- Settings subtitles -->
+    <string name="subtitle_notifications">Manage alerts and reminders</string>
+    <string name="subtitle_language">English</string>
+    <string name="subtitle_dark_mode">Off</string>
+    <string name="subtitle_backup">Last synced: Today</string>
+
+    <!-- Dashboard card labels -->
+    <string name="card_emergency_dispatch">Emergency Dispatch</string>
+    <string name="card_fleet">Fleet</string>
+    <string name="card_drivers">Drivers</string>
+    <string name="card_salary">Salary</string>
+    <string name="card_reports">Reports</string>
+    <string name="card_settings">Settings</string>
+
+    <!-- Dashboard card subtitles -->
+    <string name="card_subtitle_fleet">12 vehicles</string>
+    <string name="card_subtitle_drivers">18 active</string>
+    <string name="card_subtitle_salary">Mar 2025</string>
+
+    <!-- Tag cloud chips -->
+    <string name="chip_engine_oil">Engine Oil</string>
+    <string name="chip_brakes">Brakes</string>
+    <string name="chip_tyres">Tyres</string>
+    <string name="chip_battery">Battery</string>
+    <string name="chip_clutch">Clutch</string>
+    <string name="chip_radiator">Radiator</string>
+    <string name="chip_gearbox">Gearbox</string>
+    <string name="chip_air_filter">Air Filter</string>
+    <string name="chip_timing_belt">Timing Belt</string>
+    <string name="chip_suspension">Suspension</string>
+
+    <!-- Section headings -->
+    <string name="recent_vehicles">Recent Vehicles</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="common_parts">Common Parts</string>
+    <string name="maintenance_history">Maintenance History</string>
+
+    <!-- Dummy driver names -->
+    <string name="driver_ali_hassan">Ali Hassan</string>
+    <string name="driver_usman_tariq">Usman Tariq</string>
+    <string name="driver_bilal_ahmed">Bilal Ahmed</string>
+    <string name="driver_kamran_sheikh">Kamran Sheikh</string>
+
+    <!-- Dummy phones -->
+    <string name="phone_ali">+92 300 1234567</string>
+    <string name="phone_usman">+92 321 9876543</string>
+    <string name="phone_bilal">+92 333 5551234</string>
+    <string name="phone_kamran">+92 345 7890123</string>
+
+    <!-- Dummy vehicles -->
+    <string name="vehicle_lea">LEA-1234</string>
+    <string name="vehicle_leb">LEB-5678</string>
+    <string name="vehicle_lhr">LHR-4321</string>
+    <string name="vehicle_isb">ISB-9900</string>
+    <string name="vehicle_khi">KHI-0011</string>
+
+    <!-- Dummy vehicle types -->
+    <string name="type_coaster">Coaster</string>
+    <string name="type_bus">Bus</string>
+    <string name="type_hi_ace">Hi-Ace</string>
+
+    <!-- Status labels -->
+    <string name="status_active">ACTIVE</string>
+    <string name="status_maintenance">MAINTENANCE</string>
+    <string name="status_retired">RETIRED</string>
+
+    <!-- Dummy routes -->
+    <string name="route_lahore">Lahore Industrial Estate → Shahdara</string>
+    <string name="route_karachi">SITE Karachi → Korangi</string>
+
+    <!-- Dummy amounts -->
+    <string name="amount_25000">PKR 25,000</string>
+    <string name="amount_3500">PKR 3,500</string>
+    <string name="amount_8500">PKR 8,500</string>
+    <string name="amount_18000">PKR 18,000</string>
+
+    <!-- Badge count -->
+    <string name="badge_count">3</string>
+
+    <!-- Stats numbers -->
+    <string name="stat_vehicles_count">12</string>
+    <string name="stat_drivers_count">18</string>
+    <string name="stat_advances_count">3</string>
+
+    <!-- Notifications -->
+    <string name="notifications">Notifications</string>
+    <string name="settings">Settings</string>
+
+    <!-- Maintenance table data -->
+    <string name="part_engine_oil">Engine Oil</string>
+    <string name="part_brake_pads">Brake Pads</string>
+    <string name="part_battery">Battery</string>
+    <string name="part_air_filter">Air Filter</string>
+    <string name="part_tyres_x2">Tyres (x2)</string>
+    <string name="action_replaced">Replaced</string>
+    <string name="action_repaired">Repaired</string>
+    <string name="action_inspected">Inspected</string>
+    <string name="date_15_mar">15 Mar 2025</string>
+    <string name="date_02_apr">02 Apr 2025</string>
+    <string name="date_28_feb">28 Feb 2025</string>
+    <string name="date_10_jan">10 Jan 2025</string>
+    <string name="date_05_dec">05 Dec 2024</string>
+    <string name="cost_2500">2,500</string>
+    <string name="cost_4800">4,800</string>
+    <string name="cost_8500">8,500</string>
+    <string name="cost_500">500</string>
+    <string name="cost_18000">18,000</string>
+
+    <!-- Driver card chips -->
+    <string name="chip_available">Available</string>
+    <string name="chip_on_duty">On Duty</string>
+    <string name="chip_rating_4_5">★ 4.5</string>
+    <string name="chip_rating_4_2">★ 4.2</string>
+    <string name="chip_rating_4_8">★ 4.8</string>
+    <string name="chip_rating_3_9">★ 3.9</string>
+</resources>

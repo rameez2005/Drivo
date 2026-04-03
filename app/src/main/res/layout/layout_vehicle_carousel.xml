@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:scrollbars="none"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_screen">
+
+        <!-- Vehicle 1: LEA-1234 | Coaster | ACTIVE -->
+        <LinearLayout
+            android:layout_width="@dimen/width_vehicle_card"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_item"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/margin_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicle_lea"
+                android:textSize="@dimen/text_size_h3"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_coaster"
+                android:textSize="@dimen/text_size_body2"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_item">
+
+                <View
+                    android:layout_width="@dimen/size_status_dot"
+                    android:layout_height="@dimen/size_status_dot"
+                    android:background="@drawable/bg_status_dot_green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_active"
+                    android:textSize="@dimen/text_size_caption"
+                    android:textColor="@color/colorStatusActive"
+                    android:layout_marginStart="@dimen/margin_item" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Vehicle 2: LEB-5678 | Bus | ACTIVE -->
+        <LinearLayout
+            android:layout_width="@dimen/width_vehicle_card"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_item"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/margin_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicle_leb"
+                android:textSize="@dimen/text_size_h3"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_bus"
+                android:textSize="@dimen/text_size_body2"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_item">
+
+                <View
+                    android:layout_width="@dimen/size_status_dot"
+                    android:layout_height="@dimen/size_status_dot"
+                    android:background="@drawable/bg_status_dot_green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_active"
+                    android:textSize="@dimen/text_size_caption"
+                    android:textColor="@color/colorStatusActive"
+                    android:layout_marginStart="@dimen/margin_item" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Vehicle 3: LHR-4321 | Hi-Ace | MAINTENANCE -->
+        <LinearLayout
+            android:layout_width="@dimen/width_vehicle_card"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_item"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/margin_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicle_lhr"
+                android:textSize="@dimen/text_size_h3"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_hi_ace"
+                android:textSize="@dimen/text_size_body2"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_item">
+
+                <View
+                    android:layout_width="@dimen/size_status_dot"
+                    android:layout_height="@dimen/size_status_dot"
+                    android:background="@drawable/bg_status_dot_orange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_maintenance"
+                    android:textSize="@dimen/text_size_caption"
+                    android:textColor="@color/colorStatusMaintenance"
+                    android:layout_marginStart="@dimen/margin_item" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Vehicle 4: ISB-9900 | Coaster | ACTIVE -->
+        <LinearLayout
+            android:layout_width="@dimen/width_vehicle_card"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_item"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/margin_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicle_isb"
+                android:textSize="@dimen/text_size_h3"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_coaster"
+                android:textSize="@dimen/text_size_body2"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_item">
+
+                <View
+                    android:layout_width="@dimen/size_status_dot"
+                    android:layout_height="@dimen/size_status_dot"
+                    android:background="@drawable/bg_status_dot_green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_active"
+                    android:textSize="@dimen/text_size_caption"
+                    android:textColor="@color/colorStatusActive"
+                    android:layout_marginStart="@dimen/margin_item" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Vehicle 5: KHI-0011 | Bus | RETIRED -->
+        <LinearLayout
+            android:layout_width="@dimen/width_vehicle_card"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/margin_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicle_khi"
+                android:textSize="@dimen/text_size_h3"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_bus"
+                android:textSize="@dimen/text_size_body2"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_item">
+
+                <View
+                    android:layout_width="@dimen/size_status_dot"
+                    android:layout_height="@dimen/size_status_dot"
+                    android:background="@drawable/bg_status_dot_red" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_retired"
+                    android:textSize="@dimen/text_size_caption"
+                    android:textColor="@color/colorStatusRetired"
+                    android:layout_marginStart="@dimen/margin_item" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</HorizontalScrollView>
+

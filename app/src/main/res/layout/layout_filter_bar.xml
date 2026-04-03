@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_screen">
+
+    <RadioButton
+        android:id="@+id/rb_all"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/margin_item"
+        android:button="@null"
+        android:background="@drawable/bg_radio_chip"
+        android:gravity="center"
+        android:paddingStart="@dimen/margin_screen"
+        android:paddingEnd="@dimen/margin_screen"
+        android:paddingTop="@dimen/margin_item"
+        android:paddingBottom="@dimen/margin_item"
+        android:text="@string/filter_all"
+        android:textColor="@color/colorPrimary"
+        android:checked="true" />
+
+    <RadioButton
+        android:id="@+id/rb_active"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/margin_item"
+        android:button="@null"
+        android:background="@drawable/bg_radio_chip"
+        android:gravity="center"
+        android:paddingStart="@dimen/margin_screen"
+        android:paddingEnd="@dimen/margin_screen"
+        android:paddingTop="@dimen/margin_item"
+        android:paddingBottom="@dimen/margin_item"
+        android:text="@string/filter_active"
+        android:textColor="@color/colorPrimary" />
+
+    <RadioButton
+        android:id="@+id/rb_maintenance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/margin_item"
+        android:button="@null"
+        android:background="@drawable/bg_radio_chip"
+        android:gravity="center"
+        android:paddingStart="@dimen/margin_screen"
+        android:paddingEnd="@dimen/margin_screen"
+        android:paddingTop="@dimen/margin_item"
+        android:paddingBottom="@dimen/margin_item"
+        android:text="@string/filter_maintenance"
+        android:textColor="@color/colorPrimary" />
+
+    <RadioButton
+        android:id="@+id/rb_retired"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="@drawable/bg_radio_chip"
+        android:gravity="center"
+        android:paddingStart="@dimen/margin_screen"
+        android:paddingEnd="@dimen/margin_screen"
+        android:paddingTop="@dimen/margin_item"
+        android:paddingBottom="@dimen/margin_item"
+        android:text="@string/filter_retired"
+        android:textColor="@color/colorPrimary" />
+
+</RadioGroup>
+

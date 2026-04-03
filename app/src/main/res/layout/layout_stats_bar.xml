@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_stats_bar"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:background="@color/colorSurface"
+    android:showDividers="middle"
+    android:divider="@drawable/divider_vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stat_vehicles_count"
+            android:textSize="@dimen/text_size_stat_number"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_vehicles"
+            android:textSize="@dimen/text_size_caption"
+            android:textColor="@color/colorTextSecondary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stat_drivers_count"
+            android:textSize="@dimen/text_size_stat_number"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_drivers"
+            android:textSize="@dimen/text_size_caption"
+            android:textColor="@color/colorTextSecondary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stat_advances_count"
+            android:textSize="@dimen/text_size_stat_number"
+            android:textColor="@color/colorError"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_advances"
+            android:textSize="@dimen/text_size_caption"
+            android:textColor="@color/colorTextSecondary" />
+    </LinearLayout>
+
+</LinearLayout>
+

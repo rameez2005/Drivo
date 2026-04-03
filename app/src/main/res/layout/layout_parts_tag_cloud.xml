@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_screen">
+
+    <TextView
+        android:id="@+id/tv_common_parts_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/common_parts"
+        android:textSize="@dimen/text_size_h2"
+        android:textColor="@color/colorTextPrimary"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/margin_item"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_chips"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_common_parts_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_wrapMode="chain"
+        app:flow_horizontalGap="8dp"
+        app:flow_verticalGap="8dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_horizontalBias="0"
+        app:constraint_referenced_ids="chip_engine_oil,chip_brakes,chip_tyres,chip_battery,chip_clutch,chip_radiator,chip_gearbox,chip_air_filter,chip_timing_belt,chip_suspension" />
+
+    <TextView
+        android:id="@+id/chip_engine_oil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="@dimen/margin_card"
+        android:paddingEnd="@dimen/margin_card"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/chip_engine_oil"
+        android:textSize="@dimen/text_size_body2"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/chip_brakes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="@dimen/margin_card"
+        android:paddingEnd="@dimen/margin_card"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/chip_brakes"
+        android:textSize="@dimen/text_size_body2"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/chip_tyres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="@dimen/margin_card"
+        android:paddingEnd="@dimen/margin_card"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/chip_tyres"
+        android:textSize="@dimen/text_size_body2"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/chip_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="@dimen/margin_card"
+        android:paddingEnd="@dimen/margin_card"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/chip_battery"
+        android:textSize="@dimen/text_size_body2"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/chip_clutch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="@dimen/margin_card"
+        android:paddingEnd="@dimen/margin_card"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/chip_clutch"
+        android:textSize="@dimen/text_size_body2"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/chip_radiator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="@dimen/margin_card"
+        android:paddingEnd="@dimen/margin_card"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/chip_radiator"
+        android:textSize="@dimen/text_size_body2"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/chip_gearbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="@dimen/margin_card"
+        android:paddingEnd="@dimen/margin_card"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/chip_gearbox"
+        android:textSize="@dimen/text_size_body2"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/chip_air_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="@dimen/margin_card"
+        android:paddingEnd="@dimen/margin_card"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/chip_air_filter"
+        android:textSize="@dimen/text_size_body2"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/chip_timing_belt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="@dimen/margin_card"
+        android:paddingEnd="@dimen/margin_card"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/chip_timing_belt"
+        android:textSize="@dimen/text_size_body2"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/chip_suspension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="@dimen/margin_card"
+        android:paddingEnd="@dimen/margin_card"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/chip_suspension"
+        android:textSize="@dimen/text_size_body2"
+        android:textColor="@color/colorPrimary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

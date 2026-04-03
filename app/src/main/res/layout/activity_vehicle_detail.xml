@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_vehicle_detail"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:title="@string/title_vehicle_detail"
+            android:titleTextColor="@color/white" />
+
+        <!-- Vehicle Header Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_screen"
+            android:layout_margin="@dimen/margin_screen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicle_lea"
+                android:textSize="@dimen/text_size_h1"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_coaster"
+                android:textSize="@dimen/text_size_body1"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_item">
+
+                <View
+                    android:layout_width="@dimen/size_status_dot"
+                    android:layout_height="@dimen/size_status_dot"
+                    android:background="@drawable/bg_status_dot_green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_active"
+                    android:textSize="@dimen/text_size_body2"
+                    android:textColor="@color/colorStatusActive"
+                    android:layout_marginStart="@dimen/margin_item" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/route_lahore"
+                android:textSize="@dimen/text_size_body2"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginTop="@dimen/margin_item" />
+        </LinearLayout>
+
+        <!-- Maintenance History Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_screen"
+            android:text="@string/maintenance_history"
+            android:textSize="@dimen/text_size_h2"
+            android:textColor="@color/colorTextPrimary"
+            android:textStyle="bold" />
+
+        <!-- L7: Maintenance Table -->
+        <include layout="@layout/layout_maintenance_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_screen"
+            android:layout_marginEnd="@dimen/margin_screen" />
+
+        <!-- L10: Parts Tag Cloud -->
+        <include layout="@layout/layout_parts_tag_cloud" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+

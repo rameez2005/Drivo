@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="40dp"
+    android:layout_height="40dp">
+
+    <ImageView
+        android:id="@+id/iv_bell"
+        android:layout_width="@dimen/size_icon_medium"
+        android:layout_height="@dimen/size_icon_medium"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_bell"
+        android:contentDescription="@string/notifications" />
+
+    <TextView
+        android:id="@+id/tv_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:background="@drawable/bg_badge"
+        android:text="@string/badge_count"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_badge"
+        android:gravity="center"
+        android:minWidth="@dimen/size_badge_min"
+        android:minHeight="@dimen/size_badge_min"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp" />
+</FrameLayout>
+

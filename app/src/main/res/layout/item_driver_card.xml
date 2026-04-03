@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_item"
+    android:background="@drawable/bg_card"
+    android:padding="@dimen/margin_card">
+
+    <!-- Vertical Guideline at 22% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.28607595" />
+
+    <!-- Avatar -->
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/size_avatar"
+        android:layout_height="@dimen/size_avatar"
+        android:background="@drawable/bg_avatar_circle"
+        android:src="@drawable/ic_avatar"
+        android:contentDescription="@string/label_drivers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Driver Name -->
+    <TextView
+        android:id="@+id/tv_driver_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/driver_ali_hassan"
+        android:textSize="@dimen/text_size_h3"
+        android:textColor="@color/colorTextPrimary"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_card"
+        app:layout_constraintStart_toEndOf="@id/guideline_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Phone -->
+    <TextView
+        android:id="@+id/tv_driver_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_ali"
+        android:textSize="@dimen/text_size_body2"
+        android:textColor="@color/colorTextSecondary"
+        android:layout_marginStart="@dimen/margin_card"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@id/guideline_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_driver_name" />
+
+    <!-- Barrier below name and phone -->
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_name_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tv_driver_name,tv_driver_phone" />
+
+    <!-- Chip: Available -->
+    <TextView
+        android:id="@+id/chip_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="@dimen/margin_card"
+        android:paddingEnd="@dimen/margin_card"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="@string/chip_available"
+        android:textSize="@dimen/text_size_caption"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/margin_item"
+        app:layout_constraintStart_toEndOf="@id/guideline_avatar"
+        app:layout_constraintEnd_toStartOf="@id/chip_vehicle"
+        app:layout_constraintTop_toBottomOf="@id/barrier_name_phone"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:layout_marginStart="@dimen/margin_card" />
+
+    <!-- Chip: Vehicle -->
+    <TextView
+        android:id="@+id/chip_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="@dimen/margin_card"
+        android:paddingEnd="@dimen/margin_card"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="@string/vehicle_lea"
+        android:textSize="@dimen/text_size_caption"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/margin_item"
+        app:layout_constraintStart_toEndOf="@id/chip_available"
+        app:layout_constraintEnd_toStartOf="@id/chip_rating"
+        app:layout_constraintTop_toBottomOf="@id/barrier_name_phone" />
+
+    <!-- Chip: Rating -->
+    <TextView
+        android:id="@+id/chip_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="@dimen/margin_card"
+        android:paddingEnd="@dimen/margin_card"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="@string/chip_rating_4_5"
+        android:textSize="@dimen/text_size_caption"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/margin_item"
+        app:layout_constraintStart_toEndOf="@id/chip_vehicle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier_name_phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
