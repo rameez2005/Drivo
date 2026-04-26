@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicle_sort_options">
+        <item>Newest Added</item>
+        <item>Year (Newest First)</item>
+        <item>Maintenance Cost (High to Low)</item>
+        <item>Registration (A-Z)</item>
+    </string-array>
+</resources>
+

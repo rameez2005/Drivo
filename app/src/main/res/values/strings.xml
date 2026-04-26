@@ -8,6 +8,7 @@
     <string name="title_drivers">Drivers</string>
     <string name="title_vehicle_detail">Vehicle Detail</string>
     <string name="title_settings">Settings</string>
+    <string name="title_fuel_prices">News</string>
 
     <!-- Stats labels -->
     <string name="label_vehicles">Vehicles</string>
@@ -173,4 +174,41 @@
     <string name="detail_performance_rating">Performance Rating</string>
     <string name="owner_name">Owner Name</string>
     <string name="company_name">Company Name</string>
+    <string name="api_error_state">Unable to load headlines. Please verify API URL and endpoint.</string>
+    <string name="api_error_with_reason">Unable to load headlines: %1$s</string>
+    <string name="news_error_with_reason">Unable to load headlines: %1$s</string>
+    <string name="api_unknown_error">Unknown error</string>
+    <string name="api_config_missing">News API is not configured yet.\nBase URL: %1$s\nEndpoint: %2$s</string>
+    <string name="api_empty_state">No headlines were returned by the API.</string>
+    <string name="news_empty_state">No headlines were returned by the API.</string>
+    <string name="article_url_missing">This article link is not available.</string>
+    <string name="news_image">News image</string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="edit_vehicle">Edit Vehicle</string>
+    <string name="delete_vehicle">Delete Vehicle</string>
+    <string name="delete_vehicle_confirmation">Delete %1$s from local database?</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="vehicle_saved">Vehicle saved successfully</string>
+    <string name="vehicle_save_failed">Unable to save vehicle</string>
+    <string name="vehicle_load_failed">Unable to load fleet records from local database</string>
+    <string name="validation_required_fields">Registration, make, model, and year are required</string>
+    <string name="hint_registration">Registration number</string>
+    <string name="hint_make">Make</string>
+    <string name="hint_model">Model</string>
+    <string name="hint_year">Year</string>
+    <string name="hint_vehicle_type">Vehicle type (BUS, VAN, ...)</string>
+    <string name="hint_status">Status (ACTIVE, MAINTENANCE, RETIRED)</string>
+    <string name="hint_driver">Assigned driver</string>
+    <string name="hint_route">Assigned route</string>
+    <string name="hint_last_maintenance">Last maintenance date</string>
+    <string name="hint_maintenance_cost">Maintenance cost</string>
+    <string name="add_maintenance_log">Add Maintenance Log</string>
+    <string name="hint_part_name">Part name</string>
+    <string name="hint_action">Action (Repaired/Replaced)</string>
+    <string name="hint_service_date">Service date</string>
+    <string name="hint_cost">Cost</string>
+    <string name="refresh">Refresh</string>
 </resources>

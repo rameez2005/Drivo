@@ -9,6 +9,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import com.example.drivo.R
 import com.example.drivo.activities.MainActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DashboardFragment : Fragment() {
 
@@ -34,6 +35,13 @@ class DashboardFragment : Fragment() {
 
         // Setup click listeners for dashboard cards
         setupCardClickListeners(view)
+
+        // Notification bell opens the news feed module.
+        view.findViewById<View>(R.id.notification_container).setOnClickListener {
+            (activity as? MainActivity)?.loadFragment(ApiFeedFragment(), addToBackStack = false)
+            activity?.findViewById<BottomNavigationView>(R.id.bottom_navigation)
+                ?.selectedItemId = R.id.nav_api
+        }
     }
 
     private fun setupCardClickListeners(view: View) {

@@ -20,7 +20,7 @@
         android:paddingTop="@dimen/margin_item"
         android:paddingBottom="@dimen/margin_item"
         android:text="@string/filter_all"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/radio_chip_text_color"
         android:checked="true" />
 
     <RadioButton
@@ -37,7 +37,7 @@
         android:paddingTop="@dimen/margin_item"
         android:paddingBottom="@dimen/margin_item"
         android:text="@string/filter_active"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/radio_chip_text_color" />
 
     <RadioButton
         android:id="@+id/rb_maintenance"
@@ -53,7 +53,7 @@
         android:paddingTop="@dimen/margin_item"
         android:paddingBottom="@dimen/margin_item"
         android:text="@string/filter_maintenance"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/radio_chip_text_color" />
 
     <RadioButton
         android:id="@+id/rb_retired"
@@ -68,7 +68,7 @@
         android:paddingTop="@dimen/margin_item"
         android:paddingBottom="@dimen/margin_item"
         android:text="@string/filter_retired"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/radio_chip_text_color" />
 
 </RadioGroup>
 

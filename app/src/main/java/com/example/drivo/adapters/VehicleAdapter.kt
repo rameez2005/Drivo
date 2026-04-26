@@ -9,14 +9,12 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.drivo.R
-import com.example.drivo.activities.MainActivity
-import com.example.drivo.fragments.VehicleDetailFragment
 import com.example.drivo.models.Vehicle
-import android.os.Bundle
 
 class VehicleAdapter(
     private val context: Context,
-    private var vehicleList: List<Vehicle>
+    private var vehicleList: List<Vehicle>,
+    private val onVehicleClick: (Vehicle) -> Unit
 ) : RecyclerView.Adapter<VehicleAdapter.VehicleViewHolder>() {
 
     class VehicleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -51,14 +49,7 @@ class VehicleAdapter(
         holder.viewStatusDot.backgroundTintList =
             ColorStateList.valueOf(ContextCompat.getColor(context, dotColor))
 
-        // Item click — pass to detail
-        holder.itemView.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putSerializable("VEHICLE_DATA", vehicle)
-            val detailFragment = VehicleDetailFragment()
-            detailFragment.arguments = bundle
-            (context as MainActivity).loadFragment(detailFragment)
-        }
+        holder.itemView.setOnClickListener { onVehicleClick(vehicle) }
     }
 
     override fun getItemCount() = vehicleList.size

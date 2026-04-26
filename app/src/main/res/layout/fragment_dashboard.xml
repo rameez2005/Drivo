@@ -1,65 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/colorBackground"
     android:fitsSystemWindows="true">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@color/colorPrimary"
-        android:fitsSystemWindows="true">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
 
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:id="@+id/collapsing_toolbar"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:contentScrim="@color/colorPrimary"
-            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Headline"
-            app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Title">
+            android:layout_height="?attr/actionBarSize"
+            android:title="@string/app_name"
+            android:titleTextColor="@color/white">
 
-            <!-- Stats bar shown only when expanded — pinned to bottom of the expanded area -->
-            <include
-                layout="@layout/layout_stats_bar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                app:layout_collapseMode="parallax"
-                app:layout_collapseParallaxMultiplier="0.5" />
+            <FrameLayout
+                android:id="@+id/notification_container"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/margin_item"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless">
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin"
-                app:titleTextColor="@color/white"
-                app:title="@string/app_name">
+                <include layout="@layout/layout_notification_bell" />
 
-                <!-- Notification bell aligned to end of toolbar -->
-                <FrameLayout
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="end"
-                    android:layout_marginEnd="@dimen/margin_item">
+            </FrameLayout>
 
-                    <include layout="@layout/layout_notification_bell" />
+        </androidx.appcompat.widget.Toolbar>
 
-                </FrameLayout>
+        <include
+            layout="@layout/layout_stats_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-            </androidx.appcompat.widget.Toolbar>
-
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
-    </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:clipToPadding="false">
 
         <LinearLayout
@@ -101,5 +87,5 @@
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>
 
