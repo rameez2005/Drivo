@@ -20,9 +20,24 @@ class SplashActivity : AppCompatActivity() {
         requestNotificationPermissionIfNeeded()
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("OWNER_NAME", "Ahmed Khan")       // hardcoded owner name
-            intent.putExtra("COMPANY_NAME", "TransFleet Co.")
+            // If user is signed in, go to MainActivity; otherwise send to SignInActivity
+            val firebaseAuthClass = try {
+                com.google.firebase.auth.FirebaseAuth::class
+            } catch (e: Exception) {
+                null
+            }
+
+            val currentUser = com.google.firebase.auth.FirebaseAuth.getInstance().currentUser
+
+            val intent = if (currentUser != null) {
+                Intent(this, MainActivity::class.java).apply {
+                    putExtra("OWNER_NAME", "Ahmed Khan")       // hardcoded owner name
+                    putExtra("COMPANY_NAME", "TransFleet Co.")
+                }
+            } else {
+                Intent(this, SignInActivity::class.java)
+            }
+
             startActivity(intent)
             finish()
         }, 2000)

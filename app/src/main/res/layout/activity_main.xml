@@ -13,6 +13,14 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
+    <!-- Sign out button placed above bottom navigation -->
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign out"
+        android:layout_margin="8dp" />
+
     <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

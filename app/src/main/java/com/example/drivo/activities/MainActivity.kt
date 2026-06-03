@@ -37,6 +37,16 @@ class MainActivity : AppCompatActivity() {
 
         // Set up bottom navigation
         setupBottomNavigation()
+
+        // Setup sign out button
+        val btnSignOut = findViewById<android.widget.Button>(R.id.btnSignOut)
+        btnSignOut.setOnClickListener {
+            com.google.firebase.auth.FirebaseAuth.getInstance().signOut()
+            // Go back to SignInActivity
+            val intent = android.content.Intent(this, com.example.drivo.activities.SignInActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     override fun onStart() {
